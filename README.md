@@ -82,6 +82,9 @@ QDRIVE/
 │       ├── WeeklyMaintenance.ps1 # Sunday Refresh Routine
 │       └── QLOCK.ps1        # Surgical File-Lock Termination
 └── docs/
-    ├── QDRIVE-TaskScheduler-Setup.md # Mandatory Task Contract
-    ├── sshd_config.example   # Hardened OpenSSH Configuration
-    └── OPERATIONS.md        # Technical Operations Manual
+    ├── ARCHITECTURE.md
+    ├── CONNECTION.md
+    ├── LOREBANNER.md
+    ├── OPERATIONS.md
+    ├── sshd_config.example
+    └── QDRIVE-TaskScheduler-Setup.md
