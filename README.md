@@ -57,7 +57,7 @@ The system utilizes a specialized mount point at `C:\QDRIVE\Drive-Portal` to bri
 ---
 
 ### **Discord Command Tree**
-* **`/qdrive`**: Reports current external IP and active SSH Port. **Note:** This is the ***ONLY*** command that can be executed by non-admin users within the designated discord server. **ALL** other commands are restricted to admin use only.
+* **`/qdrive`**: Reports current external IP and active SSH Port. *Note:* This is the ***ONLY*** command that can be executed by non-admin users within the designated discord server. **ALL** other commands are restricted to admin use only.
 * **`/qstatus`**: Comprehensive system report including disk usage and Watchdog health status.
 * **`/qstart`**: Manually awakens the Port Watcher (Watchdog) via Task Scheduler.
 * **`/qaddkey`**: Programmatically injects public SSH keys into specific user vaults.
