@@ -1,9 +1,9 @@
 # QDRIVE: Self-Healing Secure SFTP Infrastructure
 
-> **Automated. Resilient. Secure.**
+> **Build your own Cloud.**
+> **A fully autonomous, self-healing SFTP infrastructure designed for dynamic network environments.**
 
-A robust, hybrid Python/PowerShell infrastructure designed to manage high-security, rotating-port SFTP servers with autonomous "Self-Healing" capabilities and Discord-based ChatOps management.
-
+A robust, hybrid Python/PowerShell engine designed to manage high-security, rotating-port SFTP servers. It bridges the gap between complex VPN networking and accessible file storage using autonomous "Self-Healing" capabilities and Discord-based ChatOps.
 ---
 
 ### **Project Overview**
@@ -42,6 +42,15 @@ This system requires a specific two-folder structure on your `C:` drive to funct
 * **`C:\QDRIVE-SYSTEM`**: Contains the "Brain" (Scripts, Configs, Logs).
 * **`C:\QDRIVE`**: The "Body" (The actual SFTP root where data lives).
 
+* **CRITICAL: "chrooting" the SFTP Server, and OpenSSH Config**
+    You must replace the default Windows SSH config with the hardened QDRIVE template.
+    1.  Navigate to the hidden folder: `C:\ProgramData\ssh`.
+    2.  Rename the original existing `sshd_config` to `sshd_config.bak` (Always have a backup).
+    3.  Copy the file `C:\QDRIVE-SYSTEM\docs\sshd_config.example` into `C:\ProgramData\ssh`.
+    4.  Rename the copied file to `sshd_config`.
+    5.  Copy the NEW `sshd_config`, paste it alongside the old backup, and rename the new backup to `sshd_config2.bak` (Always have a backup of your original, and configured versions).
+    6.  **Restart the Service:** Open PowerShell as Admin and run: `Restart-Service sshd`.
+
 #### **2. Deployment Steps**
 1.  **Clone the Repository**: Download this repo or `git clone` it.
 
@@ -54,7 +63,7 @@ This system requires a specific two-folder structure on your `C:` drive to funct
     * Create a folder named `C:\QDRIVE`.
     * Create any desired subfolders such as `C:\QDRIVE\QDRIVEADMINUPLOAD`, or `C:\QDRIVE\ADMINUP-USERDOWN`.
    
-    * **NOTE:** If you wish to utilize an external SSD within the QDRIVE to expand it's storage, create an empty folder inside the root `C:\QDRIVE` named `Drive-Portal`. (`C:\QDRIVE\Drive-Portal`)
+    * **NOTE:** If you wish to utilize an external SSD within the QDRIVE to expand its storage, create an empty folder inside the root `C:\QDRIVE` named `Drive-Portal`. (`C:\QDRIVE\Drive-Portal`)
     * **Mount the Drive:** Open **Disk Management** (`diskmgmt.msc`).
         * Right-click your target External SSD partition and select **Change Drive Letter and Paths**.
         * **Remove** any existing drive letter (e.g., `D:` or `E:`).
