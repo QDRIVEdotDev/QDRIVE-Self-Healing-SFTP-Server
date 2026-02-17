@@ -29,6 +29,17 @@ The system utilizes a specialized mount point at `C:\QDRIVE\Drive-Portal` to bri
 
 ---
 
+### **Core Documentation**
+For a deep dive into specific system components, refer to the following technical manuals:
+
+* **[System Architecture](docs/ARCHITECTURE.md)**: Breakdown of the Handshake Protocol, self-healing loops, and log parsing.
+* **[Technical Operations](docs/OPERATIONS.md)**: Deep dive into the `C:\QDRIVE` root, drive portal logic, and RBAC permissions.
+* **[Infrastructure Setup](docs/QDRIVE-TaskScheduler-Setup.md)**: Mandatory Task Scheduler and system-level configuration.
+* **[Client Connection Guide](docs/CONNECTION.md)**: Step-by-step instructions for whitelisting and WinSCP connectivity.
+* **[Lore & Banner Protocol](docs/LOREBANNER.md)**: The narrative behind the "Mind Prison" and its use as a server-identity signature.
+
+---
+
 ### **Installation & Deployment**
 
 #### **Prerequisites**
@@ -143,17 +154,6 @@ This system requires a specific two-folder structure on your `C:` drive to funct
 * **`/qallow`**: Restores standard user access to previously locked storage subfolders.
 * **`/qlock`**: Emergency lockout; terminates file locks, kills the Watchdog, and stops the SSH service.
 * **`/qrestart`**: Triggers the full Weekly Maintenance routine and issues a system reboot.
-
----
-
-### **Core Documentation**
-For a deep dive into specific system components, refer to the following technical manuals:
-
-* **[System Architecture](docs/ARCHITECTURE.md)**: Breakdown of the Handshake Protocol, self-healing loops, and log parsing.
-* **[Technical Operations](docs/OPERATIONS.md)**: Deep dive into the `C:\QDRIVE` root, drive portal logic, and RBAC permissions.
-* **[Infrastructure Setup](docs/QDRIVE-TaskScheduler-Setup.md)**: Mandatory Task Scheduler and system-level configuration.
-* **[Client Connection Guide](docs/CONNECTION.md)**: Step-by-step instructions for whitelisting and WinSCP connectivity.
-* **[Lore & Banner Protocol](docs/LOREBANNER.md)**: The narrative behind the "Mind Prison" and its use as a server-identity signature.
 
 ---
 
