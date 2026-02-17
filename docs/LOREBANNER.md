@@ -31,8 +31,8 @@ The "Mind Prison" logic serves as the project's unique signature.
 ### IV. Official Banner Text
 
 #------------------------------------------------------------
-                QDRIVE CONNECTION INITIATED                
-------------------------------------------------------------
+#                QDRIVE CONNECTION INITIATED                
+#------------------------------------------------------------
 
 Initiating connection to the QDRIVE...
 Success!
