@@ -128,7 +128,7 @@ async def execute_qrestart(interaction: discord.Interaction):
     if os.path.exists(status_path):
         os.remove(status_path)
     try:
-        script_path = os.path.join(CONFIG['paths']['base_dir'], "WeeklyMaintenance", "WeeklyMaintenance.ps1")
+        script_path = os.path.join(CONFIG['paths']['base_dir'], "src", "maintenance", "WeeklyMaintenance.ps1")
         
         subprocess.Popen(["powershell.exe", "-ExecutionPolicy", "Bypass", "-File", script_path])
         
@@ -343,3 +343,4 @@ if not token or token == "INSERT_YOUR_TOKEN_HERE":
 
 print("✅ Token found. Launching QBOT...")
 client.run(token)
+
