@@ -75,7 +75,7 @@ This system requires a specific two-folder structure on your `C:` drive to funct
     * Create a folder named `C:\QDRIVE`.
     * Create any desired subfolders such as `C:\QDRIVE\QDRIVEADMINUPLOAD`, or `C:\QDRIVE\ADMINUP-USERDOWN`.
    
-    * **NOTE:** If you wish to utilize an external SSD within the QDRIVE to expand its storage, create an empty folder inside the root `C:\QDRIVE` named `Drive-Portal`. (`C:\QDRIVE\Drive-Portal`)
+    * **NOTE:** If you wish to utilize an external SSD within the QDRIVE to expand its storage, create an empty folder inside the root `C:\QDRIVE` named `Drive-Portal` (`C:\QDRIVE\Drive-Portal`).
     * **Mount the Drive:** Open **Disk Management** (`diskmgmt.msc`).
         * Right-click your target External SSD partition and select **Change Drive Letter and Paths**.
         * **Remove** any existing drive letter (e.g., `D:` or `E:`).
