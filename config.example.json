@@ -1,0 +1,15 @@
+{
+  "bot_settings": {
+    "token": "INSERT_YOUR_TOKEN_HERE",
+    "admin_id": 123456789012345678,
+    "log_channel_id": 123456789012345678
+  },
+  "paths": {
+    "base_dir": "C:\\QDRIVE-SYSTEM",
+    "health_file": "C:\\QDRIVE-SYSTEM\\qbot_health.txt",
+    "ssh_config": "C:\\ProgramData\\ssh\\sshd_config",
+    "vault_qdrive": "C:\\Users\\QDRIVE\\.ssh\\authorized_keys",
+    "vault_qdrive_admin": "C:\\Users\\QDRIVEADMIN\\.ssh\\authorized_keys",
+    "powershell_profile": "C:\\Users\\YOUR_USER\\Documents\\WindowsPowerShell\\Microsoft.PowerShell_profile.ps1"
+  }
+}

@@ -1,0 +1,56 @@
+# ===================================
+# QDRIVE: CRITICAL SECURITY (NEVER UPLOAD)
+# ===================================
+# Private settings, tokens, and IDs
+config.json
+
+# Internal handshake and health signals
+qbot_health.txt
+maintenance_status.txt
+maintenance_report.txt
+
+# SSH Key vaults (if stored locally during setup)
+*.key
+*.pem
+authorized_keys
+
+# ===================================
+# SYSTEM BACKUPS & LOGS
+# ===================================
+# Prevents leaking automated SSH configuration backups
+*.bak.*
+*.log
+
+# Windows specific logs
+maintenance_report.txt
+
+# ===================================
+# PYTHON BOILERPLATE (Standard)
+# ===================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# ===================================
+# IDE & OS JUNK
+# ===================================
+# VS Code / PyCharm settings
+.vscode/
+.idea/
+
+# OS metadata
+.DS_Store
+Thumbs.db
