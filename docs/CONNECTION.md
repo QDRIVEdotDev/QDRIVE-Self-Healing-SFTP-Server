@@ -1,6 +1,6 @@
 # QDRIVE: Client Connection Guide
 
-This guide explains how to connect to the QDRIVE storage archive. Because the server uses a dynamic VPN and enforces strict security, you must use an SSH key instead of a password.
+This guide explains how to connect to the QDRIVE storage archive. While mobile connection is possible (via Termius on Android/iOS), this guide focuses on the Desktop setup. Because the server uses a dynamic VPN and enforces strict security, you must use an SSH key. Passwords are disabled.
 
 ---
 
@@ -15,12 +15,15 @@ WinSCP is the recommended client for accessing the QDRIVE on a desktop.
 ### Phase 2: Generate Your Security Key
 The QDRIVE does not use passwords. You will create a "Public Key" to send to the admin and keep a "Private Key" on your own computer.
 
-1. **Open PuTTYgen**: In WinSCP’s login window, go to **Tools** (bottom-left) and select **Run PuTTYgen**.
-2. **Key Type**: At the bottom, change the type to **EdDSA** (25519).
-3. **Generate**: Click **Generate** and move your mouse around the blank area until the bar is full.
-4. **Save Private Key**: Click **Save private key**. Keep this file safe; if you lose it, you lose access to the server.
-5. **Copy Public Key**: Copy the entire block of text in the box at the top (starting with `ssh-ed25519`). 
-6. **Whitelisting**: Send that copied text to the Admin via Discord.
+1.  **Open PuTTYgen**: In WinSCP’s login window, click **Tools** (bottom-left) and select **Run PuTTYgen**.
+2.  **Key Type**: At the bottom, change the type to **EdDSA** (Scheme: Ed25519).
+3.  **Generate**: Click **Generate** and move your mouse around the blank area until the bar is full.
+4.  **Save Private Key**: Click **Save private key**. Name it `QDRIVE-KEY`. **Keep this safe.** If you lose it, you lose access.
+5.  **Copy Public Key**: 
+    * **STOP:** Do **NOT** click "Save public key". That format will not work.
+    * **ACTION:** Look at the text box at the very top labeled *"Public key for pasting into OpenSSH authorized_keys file"*.
+    * **COPY:** Select and copy that entire block of text (starts with `ssh-ed25519...`).
+6.  **Whitelisting**: Send that copied text to the Admin via Discord private DM, Email, or any secure communication method.
 
 ---
 
@@ -49,10 +52,5 @@ To verify you are connecting to the correct server and not a spoofed one, look f
 ---
 
 ### Troubleshooting
-* **Connection Failed**: Double-check the Port number in Discord. The VPN rotations happen automatically, and the old port will stop working immediately.
+* **Connection Failed**: Double-check the Port number, and IP address in Discord (using `/qdrive`). The VPN rotations happen automatically, and the old port and IP will stop working immediately.
 * **Access Denied**: Ensure your private key is correctly attached to your WinSCP profile and that you haven't typed anything into the password field.
-
----
-
-### Terms of Use
-The QDRIVE is a private archive for demonstration purposes. Users are allowed to view the file structure and contents but are strictly prohibited from downloading, copying, or distributing any data.
