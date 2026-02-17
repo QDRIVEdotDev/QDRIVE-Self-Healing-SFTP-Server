@@ -54,6 +54,7 @@ This system requires a specific two-folder structure on your `C:` drive to funct
 * **`C:\QDRIVE`**: The "Body" (The actual SFTP root where data lives).
 
 * **CRITICAL: "chrooting" the SFTP Server, and OpenSSH Config**
+  
     You must replace the default Windows SSH config with the hardened QDRIVE template.
     1.  Navigate to the hidden folder: `C:\ProgramData\ssh`.
     2.  Rename the original existing `sshd_config` to `sshd_config.bak` (Always have a backup).
