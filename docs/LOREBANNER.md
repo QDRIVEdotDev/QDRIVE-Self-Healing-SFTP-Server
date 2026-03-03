@@ -17,8 +17,8 @@ For the banner to display correctly during the SSH handshake, the `banner.txt` f
 
 ---
 
-### III. Interdimensional Narrative
-The "Mind Prison" logic serves as the project's unique signature.
+### III. Interdimensional Access
+The "Mind Prison" logic serves as the project's identity.
 
 * **The Space Judge**: An automated interdimensional authority that sentences unauthorized users to "Mind Prison".
 * **The Sentence**: 100,000,000 perceived Earth years.
